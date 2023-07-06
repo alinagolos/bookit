@@ -10,44 +10,139 @@
   <body>
     <header class="header">
       <div class="content">
-        <div class="header-row">
-          <div class="header-left">
-            <a href="tel:+977 9878787845" class="header-phone"
-              >+977 9878787845</a
-            >
-            <a href="mailto:let’sbookit@gmail.com" class="header-email"
-              >let’sbookit@gmail.com</a
-            >
-          </div>
-
-          <div class="header-right">
-            <div class="header-social">
-              <a href="">
-                <img src="images/facebook.svg" alt="facebook" />
-              </a>
-              <a href="">
-                <img src="images/linkedin.svg" alt="linkedin" />
-              </a>
-              <a href="">
-                <img src="images/twitter.svg" alt="twitter" />
-              </a>
+        <div class="header-top">
+          <div class="header-row">
+            <div class="header-left">
+              <a href="tel:+977 9878787845" class="header-phone"
+                >+977 9878787845</a
+              >
+              <a href="mailto:let’sbookit@gmail.com" class="header-email"
+                >let’sbookit@gmail.com</a
+              >
             </div>
-            <div class="header-btn-wrap">
-              <a href="" class="header-btn">Log In</a>
-              <a href="" class="header-btn is-active">Sign Up</a>
-            </div>
-            <div class="header-nr">
-              <select>
-                <option>NRs-1</option>
-                <option>NRs-2</option>
-                <option>NRs-3</option>
-                <option>NRs-4</option>
-                <option>NRs-5</option>
-              </select>
+            <div class="header-right">
+              <div class="header-social">
+                <a href="">
+                  <img src="images/facebook.svg" alt="facebook" />
+                </a>
+                <a href="">
+                  <img src="images/linkedin.svg" alt="linkedin" />
+                </a>
+                <a href="">
+                  <img src="images/twitter.svg" alt="twitter" />
+                </a>
+              </div>
+              <div class="header-btn-wrap">
+                <a href="" class="header-btn">Log In</a>
+                <a href="" class="header-btn is-active">Sign Up</a>
+              </div>
+              <div class="header-nr select-custom">
+                <select>
+                  <option>NRs-1</option>
+                  <option>NRs-2</option>
+                  <option>NRs-3</option>
+                  <option>NRs-4</option>
+                  <option>NRs-5</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
+        <div class="header-bottom">
+          <div class="logo">
+            <a href="#">
+              <img src="images/Logo.svg" alt="Logo" />
+            </a>
+          </div>
+          <nav class="header-nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#"> Explore</a></li>
+              <li><a href="#">Bookings</a></li>
+              <li><a href="#">Find Ticket</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+    <div
+      class="banner-wrapper"
+      style="background-image: url(images/banner.png)"
+    >
+      <div class="content">
+        <div class="banner-content">
+          <h1 class="banner-title">Say Yes to The World</h1>
+          <div class="banner-description">
+            Pulvinar rhoncus eget non vulputate varius ullamcorper enim arcu
+            mauris. Pharetra <br />
+            augue amet sit cursus. Leo commodo neque neque praesent. Aliquet
+            tincidunt <br />
+            maecenas elementum eu ipsum erat. Velit quisque morbi nisl accumsan
+            auctor at <br />
+            at nec.
+          </div>
+          <div class="banner-form">
+            <form>
+              <fieldset class="input-fieldset">
+                <label for="departure-airport">Departure Airport</label>
+                <fieldset class="input-item">
+                  <img src="images/location.svg" alt="Локация" />
+                  <input
+                    id="departure-airport"
+                    placeholder="Where are you now?"
+                    type="text"
+                  />
+                </fieldset>
+              </fieldset>
+
+              <fieldset class="input-fieldset">
+                <label for="departure-airport">Arrival Airport</label>
+                <fieldset class="input-item">
+                  <img src="images/location.svg" alt="Локация" />
+                  <input
+                    id="departure-airport"
+                    placeholder="Where are you going?"
+                    type="text"
+                  />
+                </fieldset>
+              </fieldset>
+
+              <fieldset class="input-fieldset">
+                <label for="departure-airport">Date</label>
+                <fieldset class="input-item">
+                  <img src="images/calender.svg" alt="Дата" />
+                  <input
+                    id="departure-airport"
+                    placeholder="When are you leaving?"
+                    type="text"
+                  />
+                </fieldset>
+              </fieldset>
+
+              <fieldset class="input-fieldset">
+                <label for="departure-airport">Travellers</label>
+                <fieldset class="input-item">
+                  <img src="images/person.svg" alt="Человек" />
+                  <div class="select-custom">
+                    <select>
+                      <option selected disabled>Number of passengers</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </fieldset>
+              </fieldset>
+            </form>
+          </div>
+          <div class="banner-btn">
+            <a href="#">Search Your Flight</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
