@@ -121,6 +121,11 @@ table {
   border-spacing: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   line-height: 1;
   font-family: "Inter";
@@ -272,6 +277,70 @@ h1 {
 }
 .logo {
   max-width: 177px;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger img {
+  max-width: 40px;
+}
+.header-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1e1e1e;
+  padding: 60px 25px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.35s ease;
+}
+.header-mobile .header-right {
+  display: block;
+}
+.header-mobile .header-social,
+.header-mobile .header-btn-wrap {
+  border: none;
+}
+
+.header-mobile .header-left {
+  margin-bottom: 25px;
+}
+.header-mobile .header-left a {
+  display: block;
+}
+
+.header-mobile .header-phone {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.header-mobile .header-btn-wrap {
+  display: block;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.header-mobile .header-btn :first-child {
+  margin-right: 0;
+}
+
+.header-mobile .header-btn-wrap a {
+  margin-bottom: 20px;
+}
+.header-mobile .header-social {
+  margin-right: 0;
+  padding-right: 0;
+  margin-bottom: 15px;
+}
+.header-mobile-close {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+.header-mobile-close img {
+  max-width: 20px;
+  opacity: 0.7;
 }
 /*Header END*/
 
@@ -441,13 +510,12 @@ h1 {
 
 /* SERVICES end*/
 /*Subscribe START*/
-.subscribe-content {
-  border-radius: 40px;
+.subscribe-wrapper {
   background-color: #e0b100;
-  padding: 80px 284px;
+  padding: 80px 0;
   text-align: center;
 }
-.subscribe-content .dev-descr {
+.subscribe-wrapper .dev-descr {
   max-width: 600px;
   margin: 0 auto 40px auto;
 }
@@ -548,3 +616,149 @@ h1 {
   color: #7e838f;
 }
 /*footer end*/
+
+/*Responsive START*/
+@media screen and (max-width: 1400px) {
+  .dest-left {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    padding: 0 40px;
+  }
+  .banner-btn {
+    text-align: center;
+  }
+  .dest-left {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .dest-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .dest-right {
+    width: 100%;
+  }
+
+  .country-image {
+    width: auto;
+  }
+  .services-left {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  .header-top,
+  .header-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header-mobile {
+    display: block;
+    transform: translateX(110%);
+  }
+  .header-mobile.is-active {
+    transform: none;
+  }
+
+  .banner-wrapper {
+    padding-top: calc(93px +80px);
+  }
+  .banner-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  .input-item input::placeholder {
+    color: #fff;
+  }
+  .input-item .select-custom select {
+    opacity: 1;
+  }
+
+  .footer {
+    margin-top: 70px;
+  }
+  .footer-logo {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-form form {
+    grid-template-columns: 1fr;
+  }
+  .banner-description {
+    margin-bottom: 50px;
+  }
+
+  .country-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .services-row {
+    flex-direction: column;
+  }
+  .services-left {
+    order: 1;
+  }
+  .services-right {
+    text-align: left;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  .services-wrapper {
+    margin-top: 0px;
+    background-image: none !important;
+    padding-bottom: 0;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+  }
+  .subscribe-input {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-form unput {
+    width: 100%;
+  }
+
+  .subscribe-envelope img {
+    max-width: 120px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .content {
+    padding: 0 20px;
+  }
+  .country-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .footer-menu ul {
+    display: block;
+  }
+  .footer-menu ul li {
+    display: block;
+  }
+  .footer-menu ul li:nth-last-child(n + 2) {
+    margin-bottom: 15px;
+  }
+}
+/*Responsive END*/
